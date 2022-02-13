@@ -17,6 +17,8 @@ export default function Home({ pokemon }) {
                   className="h-20 w-20 mr-3"
                   src={pokeman.image}
                   alt={pokeman.name}
+                  width="100"
+                  height="100"
                 />
                 <span className="mr-2 font-bold">{index + 1}.</span>
                 {pokeman.name}

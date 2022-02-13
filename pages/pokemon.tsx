@@ -9,9 +9,16 @@ function Pokemon({ pokeman }) {
       title={pokeman.name.charAt(0).toUpperCase() + pokeman.name.slice(1)}
     >
       <h1 className="text-4xl mb-2 text-center capitalize">{pokeman.name}</h1>
-      <Image className="mx-auto" src={pokeman.image} alt={pokeman.name} />
+      <div className="text-center ">
+        <Image
+          src={pokeman.image}
+          alt={pokeman.name}
+          width="200"
+          height="200"
+        />
+      </div>
       <p>
-        <span className="font-bold mr-2">Weight:</span>
+        <span className="font-bold mr-2  ">Weight:</span>
         {pokeman.weight}
       </p>
       <p>
